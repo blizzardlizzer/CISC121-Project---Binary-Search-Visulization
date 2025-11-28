@@ -16,6 +16,12 @@ Pattern Recognition
   - binary search is an algorithm so it works the same for any list size
  
  Abstraction
- - focus on finding the target rather than the number of elements in the list
+ - the parts that will be shown to the user are the left, right and mid pointers, as well as how they move.
+    - this will be done with using different highlights
+ - The calculations for mid can also be shown to help with understanding how the pointers are chosen
+ - the halfs of the list will also be shown to help with seeing how the algorithm finds the target
 
+Algorithmic Design
+- the user will first be asked to generate a list of numbers with a max size of 15 and a target
+- the program will then generate the list and perform the pointer calculations and the algorithm will run until target is found or not found
    
