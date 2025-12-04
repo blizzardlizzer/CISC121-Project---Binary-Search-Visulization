@@ -25,3 +25,18 @@ Algorithmic Design
 - The user will first be asked to generate a list of numbers with the option to generate a random list of size 50 to test the algorithm
 - The program will then generate the list and perform the pointer calculations, and the algorithm will run until the target is found or not found
    
+
+Screenshots/ gif
+
+static
+
+<img width="592" height="329" alt="image" src="https://github.com/user-attachments/assets/beb9e76a-4907-43a1-bf17-536f6dae959b" />
+
+<img width="624" height="477" alt="image" src="https://github.com/user-attachments/assets/69d2da33-4fd7-4965-801a-ef3e3853e02a" />
+
+Animated
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9170dbcc-c319-46d3-89c8-7bac215e4d09)
+
+![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/253d2810-758d-427c-9891-703f977e62d0)
+
+
