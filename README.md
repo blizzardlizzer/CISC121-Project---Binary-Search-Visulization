@@ -1,5 +1,7 @@
 # CISC121-Project---Binary-Search-Visulization
 
+https://huggingface.co/spaces/blizzardlizzer/binarysearch
+
 A visualization of Binary search
 
 The reason why I chose this algorithm is because of its applicability in the real world when analyzing data
