@@ -13,15 +13,15 @@ Decomposition
 - think about when to know the target is found
 
 Pattern Recognition
-  - binary search is an algorithm so it works the same for any list size
+  - Binary search is an algorithm, so it works the same for any list size
  
  Abstraction
- - the parts that will be shown to the user are the left, right and mid pointers, as well as how they move.
-    - this will be done with using different highlights
+ - The parts that will be shown to the user are the left, right and mid pointers, as well as how they move.
+    - This will be done using different highlights
  - The calculations for mid can also be shown to help with understanding how the pointers are chosen
- - the halfs of the list will also be shown to help with seeing how the algorithm finds the target
+ - The halves of the list will also be shown to help with seeing how the algorithm finds the target
 
 Algorithmic Design
-- the user will first be asked to generate a list of numbers with a max size of 15 and a target
-- the program will then generate the list and perform the pointer calculations and the algorithm will run until target is found or not found
+- The user will first be asked to generate a list of numbers with the option to generate a random list of size 50 to test the algorithm
+- The program will then generate the list and perform the pointer calculations, and the algorithm will run until the target is found or not found
    
