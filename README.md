@@ -33,8 +33,10 @@ Screenshots/ gif
 static
 
 <img width="592" height="329" alt="image" src="https://github.com/user-attachments/assets/beb9e76a-4907-43a1-bf17-536f6dae959b" />
+Since the target is in the list, target is found
 
 <img width="624" height="477" alt="image" src="https://github.com/user-attachments/assets/69d2da33-4fd7-4965-801a-ef3e3853e02a" />
+since the target is not in the list, target is not found
 
 Animated
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9170dbcc-c319-46d3-89c8-7bac215e4d09)
