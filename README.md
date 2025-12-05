@@ -32,7 +32,11 @@ Algorithmic Design
 - The program will then generate the list and perform the pointer calculations, and the algorithm will run until the target is found or not found
 - The user can choose between an animated version of a version that displays each step 1 by 1
 - This will be done using Gradio to provide a visualization of the search
-   
+
+
+Flowchart
+<img width="664" height="738" alt="image" src="https://github.com/user-attachments/assets/9bf55c2f-653c-4c0c-8ba0-57b906237a7b" />
+
 
 Screenshots/ gif
 
