@@ -52,7 +52,9 @@ Error handling: the inputed list is not sorted
 Animated
 
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9170dbcc-c319-46d3-89c8-7bac215e4d09)
+Random array
 
 ![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/253d2810-758d-427c-9891-703f977e62d0)
+user given array
 
 
