@@ -1,0 +1,10 @@
+Depencencies needed 
+
+Gradio
+- pip install gradio
+
+
+python libraries
+import time
+import random
+from typing import List, Tuple
