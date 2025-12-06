@@ -45,22 +45,27 @@ Algorithmic Design
 **static**
 
 <img width="592" height="329" alt="image" src="https://github.com/user-attachments/assets/beb9e76a-4907-43a1-bf17-536f6dae959b" />
+
 Since the target is in the list, target is found
 
 <img width="624" height="477" alt="image" src="https://github.com/user-attachments/assets/69d2da33-4fd7-4965-801a-ef3e3853e02a" />
+
 since the target is not in the list, target is not found
 
 <img width="353" height="312" alt="image" src="https://github.com/user-attachments/assets/cfc8afd0-08d8-416f-8197-575dce1aaa3d" />
-Error handling: the inputed list is not sorted
+
+Error handling: the input list is not sorted
 
 
 
 **Animated**
 
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9170dbcc-c319-46d3-89c8-7bac215e4d09)
+
 Random array
 
 ![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/253d2810-758d-427c-9891-703f977e62d0)
+
 user given array
 
 **Steps to Run**
@@ -68,4 +73,7 @@ user given array
 - then enter your list or choose a random array for the animated version
 - then watch the algorithm solve the problem
 
-
+**AI Disclaimer**
+- the binary search algorithm was make by me
+- the visuals with gradio as well as the visuals within the algorithm steps, were created with the help of ai
+  
