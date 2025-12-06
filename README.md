@@ -7,7 +7,7 @@ A visualization of Binary search
 The reason why I chose this algorithm is because of its applicability in the real world when analyzing data
 
 
-Computational Thinking
+**Computational Thinking**
 
 Decomposition
 - think about how to set up your pointers
@@ -34,13 +34,15 @@ Algorithmic Design
 - This will be done using Gradio to provide a visualization of the search
 
 
-Flowchart
+**Flowchart**
 <img width="664" height="738" alt="image" src="https://github.com/user-attachments/assets/9bf55c2f-653c-4c0c-8ba0-57b906237a7b" />
 
 
-Screenshots/ gif
 
-static
+
+**Screenshots/ gif**
+
+**static**
 
 <img width="592" height="329" alt="image" src="https://github.com/user-attachments/assets/beb9e76a-4907-43a1-bf17-536f6dae959b" />
 Since the target is in the list, target is found
@@ -53,12 +55,17 @@ Error handling: the inputed list is not sorted
 
 
 
-Animated
+**Animated**
 
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9170dbcc-c319-46d3-89c8-7bac215e4d09)
 Random array
 
 ![ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/253d2810-758d-427c-9891-703f977e62d0)
 user given array
+
+**Steps to Run**
+- choose which visulization you want(step by step or animated)
+- then enter your list or choose a random array for the animated version
+- then watch the algorithm solve the problem
 
 
