@@ -148,7 +148,7 @@ with gr.Blocks() as demo:
 
         #visuals for animated steps
         with gr.TabItem("Animated Steps"):
-            arr_input2 = gr.Textbox(label="Sorted Array", value="Enter Array Here")
+            arr_input2 = gr.Textbox(label="Sorted Array", value="Enter Array Here(Comma Seperated)")
             target_input2 = gr.Number(label="Target", value="Enter Target Here")
             speed_input = gr.Slider(0, 1, value=0.5, label="Speed (0=fast,1=slow)")
             use_random_input = gr.Checkbox(label="Use Random Array")
