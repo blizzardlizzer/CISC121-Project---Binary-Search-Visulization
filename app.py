@@ -3,9 +3,8 @@ import time
 import random
 from typing import List, Tuple
 
-# ------------------------------
-# Helper function
-# ------------------------------
+
+#checks inputs and converts to the same format each time to avoid errors
 def try_parse_number(s: str):
     s = s.strip()
     try:
@@ -16,12 +15,11 @@ def try_parse_number(s: str):
         except:
             raise
 
-# ------------------------------
-# Shared rendering function (same style for both versions)
-# ------------------------------
+
 def render_array_frame(arr, left, right, mid, message):
     html = "<div style='font-family:monospace;font-size:20px;margin-top:10px;'>"
     for i, v in enumerate(arr):
+    # Determine color based on position
         color = "#000000"
         if left <= i <= right:
             color = "#c8dcf0"
@@ -31,6 +29,7 @@ def render_array_frame(arr, left, right, mid, message):
             color = "#008cff"
         if i == right:
             color = "#ff0000"
+        # created the visuals blocks for each element
         html += f"""
         <div style="
             display:inline-block;
@@ -44,6 +43,7 @@ def render_array_frame(arr, left, right, mid, message):
             min-width:30px;
         ">{v}</div>
         """
+    # creates pointers for each block to help with visualization
     pointer_row = "<div style='font-size:16px;'>"
     for i in range(len(arr)):
         label = ""
@@ -56,9 +56,7 @@ def render_array_frame(arr, left, right, mid, message):
     html += f"<div style='margin-top:10px;font-size:18px;'>{message}</div>"
     return html
 
-# ------------------------------
-# Static version
-# ------------------------------
+
 def build_binary_search_steps(arr_text: str, target_value: float) -> Tuple[str, int]:
     try:
         parts = [p.strip() for p in arr_text.split(",") if p.strip() != ""]
@@ -75,6 +73,7 @@ def build_binary_search_steps(arr_text: str, target_value: float) -> Tuple[str, 
     html_parts = ["<div style='font-family:monospace;'>"]
     html_parts.append(f"<h3>Binary Search Steps (target = {target_value})</h3>")
 
+    #regular binary search steps but with added steo by step visualization steps basedon the pointers
     while left <= right:
         mid = left + (right - left) // 2
         html_parts.append(render_array_frame(arr, left, right, mid, f"Step {step}: left={left}, right={right}, mid={mid}"))
@@ -95,11 +94,10 @@ def build_binary_search_steps(arr_text: str, target_value: float) -> Tuple[str, 
     html_parts.append("</div>")
     return "\n".join(html_parts), found_index
 
-# ------------------------------
-# Animated version (same style)
-# ------------------------------
+
 def animated_binary_search(arr_text, target, speed, use_random=False):
     random_target_display = ""
+    # checks if the random array check box is checked and then generates the array and target
     if use_random:
         arr = sorted(random.randint(0, 100) for _ in range(50))
         target = random.choice(arr)
@@ -118,6 +116,7 @@ def animated_binary_search(arr_text, target, speed, use_random=False):
     yield render_array_frame(arr, left, right, -1, "Starting binary search..."), "Starting...", random_target_display
     time.sleep(delay)
 
+    #binary search algorithm with small tweaks that allow for visualization with each step
     while left <= right:
         mid = left + (right - left) // 2
         yield render_array_frame(arr, left, right, mid, f"Checking mid = {mid}"), f"Checking index {mid}", random_target_display
@@ -136,18 +135,18 @@ def animated_binary_search(arr_text, target, speed, use_random=False):
 
     yield render_array_frame(arr, -1, -1, -1, f"Value {target} not found."), "Not found", random_target_display
 
-# ------------------------------
-# Gradio App
-# ------------------------------
+# Gradio Interface
 with gr.Blocks() as demo:
     gr.Markdown("## Binary Search Visualization")
     with gr.Tabs():
         with gr.TabItem("Static Steps"):
-            arr_input1 = gr.Textbox(label="Sorted Array", value="Enter Array Here")
+            # visuals for step by step
+            arr_input1 = gr.Textbox(label="Sorted Array", value="Enter Array Here(Comma seperated) ex. 1,2,3,4,5")
             target_input1 = gr.Number(label="Target", value="Enter Target Here")
             static_out = gr.HTML(label="Step-by-step Visualization")
             gr.Button("Run").click(build_binary_search_steps, inputs=[arr_input1, target_input1], outputs=[static_out])
 
+        #visuals for animated steps
         with gr.TabItem("Animated Steps"):
             arr_input2 = gr.Textbox(label="Sorted Array", value="Enter Array Here")
             target_input2 = gr.Number(label="Target", value="Enter Target Here")
